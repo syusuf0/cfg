@@ -22,5 +22,3 @@
 ### git push
 
 *Question 8*
-
-##The git commit command requires a message that defines the changes to operate. The message can be attached by employing -m followed by the message in quotation.
