@@ -1,41 +1,41 @@
-# Dictionary of shop items
-shop_items = {"Smartphone": 120, "Headphones": 50, "Charger": 20}
+# Shop items
+shop_items = {"laptop": 190, "charger": 50, "laptop case": 20}
 
-# Customer's available money
+# Customer's money
 customer_balance = 100
 
-# Counter for number of tries
+# no of tries
 purchase_attempts = 0
 
 class PurchaseError(Exception):
     pass
 
 def show_items():
-    print("\nWelcome to our shop! Here are the available items:")
+    print("\nWelcome to Tech shop! This is a catalogue of available items:")
     for item, price in shop_items.items():
         print(f"{item}: £{price}")
-    print("Type the name of the item you want to buy or 'exit' to leave the shop.")
+    print("Enter the name of the product you wish to purchase or 'quit' to leave the shop.")
 
 while True:
     show_items()
-    choice = input("\nWhat would you like to buy? ")
+    choice = input("\nWhat would you like to purchase? ")
 
     try:
         if choice.lower() == 'exit':
-            print("Thank you for visiting our shop. Have a nice day!")
+            print("Thank you for browsing. Enjoy your day!")
             break
 
         elif choice not in shop_items:
             raise ValueError
 
         elif shop_items[choice] > customer_balance:
-            print(f"You can't afford {choice}. It costs £{shop_items[choice]} and you have only £{customer_balance}")
-            more_money = input("Do you have more money to add to your balance? (yes/no) ")
+            print(f"You do not have sufficient balance for {choice}. The amount is £{shop_items[choice]} and your balance £{customer_balance}")
+            more_money = input("Can you add money to your balance? (yes/no) ")
 
             if more_money.lower() == 'yes':
                 added_money = float(input("How much do you want to add? "))
                 customer_balance += added_money
-                print(f"You have now £{customer_balance}.")
+                print(f"You now have £{customer_balance}.")
 
         elif shop_items[choice] <= customer_balance:
             customer_balance -= shop_items[choice]
@@ -45,12 +45,11 @@ while True:
         purchase_attempts += 1
 
         if purchase_attempts >= 3:
-            raise PurchaseError("Too many unsuccessful purchase attempts. You are asked to leave the shop.")
+            raise PurchaseError("Error! Too many unsuccessful attempts. Please leave the shop.")
 
     except ValueError:
-        print("Invalid input. Please type the exact name of the item or 'exit'.")
+        print("Invalid input. Please enter the name of the item or 'quit'.")
 
     except PurchaseError as e:
         print(str(e))
         break
-
