@@ -23,7 +23,7 @@
 ###1.9 Creating an ordering system for a restaurant:
     a) Key Requirements:
 
-   Users should have access to the menu, have the ability to select items and add them to carts, be able to put in orders obtain confirmations, and be given access to the orders so that staff members can view and handle them.
+Users should have access to the menu, have the ability to select items and add them to carts, be able to put in orders obtain confirmations, and be given access to the orders so that staff members can view and handle them.
     b) Important factors and issues:
         The system that is used must meet the following requirements: - It must be simple to use for everyone involved - It has to be safe, especially for the handling of payments - It must be dependable and quick because orders must be handled instantly
     b) Potential parts or equipment
