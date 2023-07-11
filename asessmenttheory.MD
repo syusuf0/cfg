@@ -21,12 +21,11 @@
 ## 1.8. Git's branching feature permits developers to construct a distinct development line that is separate from the primary line of code. This is helpful when creating new features or testing code. The "master" branch of the primary line of code can be re-joined once the branch's code has reached a stable state.
 
 ## 1.9 Creating an ordering system for a restaurant:
-    a) Key Requirements:
-
+   ## a) Key Requirements:
 Users should have access to the menu, have the ability to select items and add them to carts, be able to put in orders obtain confirmations, and be given access to the orders so that staff members can view and handle them.
-    b) Important factors and issues:
+   ## b) Important factors and issues:
         The system that is used must meet the following requirements: - It must be simple to use for everyone involved - It has to be safe, especially for the handling of payments - It must be dependable and quick because orders must be handled instantly
-    b) Potential parts or equipment
+   ## b) Potential parts or equipment
         Customers place orders using a frontend interface (website or app), also an interface for staff to check and handle orders. Order processing and payment are handled by a backend server.
 Database to store data of the menu and order 
 
