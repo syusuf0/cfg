@@ -1,9 +1,9 @@
 
 CREATE TABLE movie_info (
     Movie_ID INT PRIMARY KEY,
-    Movie_Name VARCHAR(255),
+    Movie_Name VARCHAR(295),
     Movie_Length TIME,
-    Age_Rating VARCHAR(50)
+    Age_Rating VARCHAR(60)
 );
 
 CREATE TABLE screens (
