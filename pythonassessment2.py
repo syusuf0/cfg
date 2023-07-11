@@ -5,14 +5,14 @@ def calculate_classes(n_students):
     Parameters:
     n_students (int): The number of students.
     """
-    # ensure a minimum of 2 classes
+    # makes sure there is  a minimum of 2 classes
     n_classes = max(2, round(n_students / 30))
 
-    # calculate the number of students in each class as evenly as possible
+    # making sure there is equal amount of student per class
     students_per_class = n_students // n_classes
     remainder = n_students % n_classes
 
-    # create the allocation dictionary
+    # construct an allocation dictionary
     allocation = {}
     for i in range(n_classes):
         allocation[f'Class {i + 1}'] = students_per_class + (i < remainder)
@@ -21,7 +21,12 @@ def calculate_classes(n_students):
     print(allocation)
 
 
-# example usage
-calculate_classes(31)
-calculate_classes(59)
-calculate_classes(87)
+print("Script started")
+
+# test inputs
+calculate_classes(33)
+calculate_classes(67)
+calculate_classes(94)
+
+print("Script ended")
+
