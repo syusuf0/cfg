@@ -27,6 +27,6 @@ Users should have access to the menu, have the ability to select items and add t
         The system that is used must meet the following requirements: - It must be simple to use for everyone involved - It has to be safe, especially for the handling of payments - It must be dependable and quick because orders must be handled instantly
    ## b) Potential parts or equipment
         Customers place orders using a frontend interface (website or app), also an interface for staff to check and handle orders. Order processing and payment are handled by a backend server.
-Database to store data of the menu and order 
+## Database to store data of the menu and order 
 
 
